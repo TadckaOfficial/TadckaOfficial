@@ -1,0 +1,1464 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) END END
+*/
+
+body {
+	background: #f4e3c9;
+	background-image: url("../images/crissxcross.png");
+}
+
+li {
+	list-style: none;
+}
+
+/* -------------------------------------- start main container -------------------------------------------------- */
+
+.container {
+	text-align: center;
+	font-family: Bazar, sans-serif;
+}
+
+@media screen and (max-width: 550px) {
+	.container {
+		box-shadow: none;
+	}
+}
+
+/* -------------------------------------- xxx --- text-below --- bendri nustatymai ------------------------- */
+
+.xxx, .text-below {
+	margin-top: 10px;
+}
+
+.xxx {
+	font-size: 24px;
+	padding: 0 0 5px;
+}
+
+.xxx:after, .xxx:before {
+    content:"\00a0\00a0\00a0\00a0\00a0";
+    text-decoration:line-through;
+    /* font-family: monospace; PRAILGINA LINIJA */
+    padding: 0 10px;
+    color: #393a3a;
+    align-items: center;
+    font-size: 30px;
+}
+
+.bottom-xxx {
+	font-size: 24px;
+	padding: 0 0 5px;
+	color: #f6edd8;
+}
+
+.bottom-xxx:after, .bottom-xxx:before {
+    content:"\00a0\00a0\00a0\00a0\00a0";
+    text-decoration:line-through;
+    padding: 0 10px;
+    align-items: center;
+    font-size: 30px;
+    color: #f6edd8 !important;
+}
+
+.text-below {
+	margin-bottom: 50px;
+	font-size: 18px;
+}
+
+/* --------------------------------------------------- start navbar --------------------------------------------- */
+
+.navbar {
+	background: #7bbebe;
+	box-shadow: 1px 1px 5px grey;
+	background-image: url("../images/foggy-birds.png");
+	font-size: 23px;
+}
+
+.retro-nav  {
+	height: 100px;
+}
+
+.nav-retro {
+	margin-top: 50px;
+}
+
+.nav-right li, .nav-left li {
+	margin: 50px 20px;
+}
+
+/*
+.border-border {
+	position: relative;
+	top: 10px;
+	border-bottom: 1px dashed red;
+	box-shadow: none;
+}
+/*
+
+/* ------------- crazy nav menu underline --------------- */
+
+.nav-right li a, .nav-left li a {
+	text-decoration: none;
+	color: #f9ebd9;
+}
+
+.nav-right li a, .nav-left li a {
+  position: relative;
+  color: #f9ebd9;
+  text-decoration: none;
+}
+
+.nav-right li a:before, .nav-left li a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	bottom: -15px;
+	left: 0;
+	background-color: #f9ebd9;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-right li a:hover:before, .nav-left li a:hover:before {
+	visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.nav-right li a:active, .nav-left li a:active {
+}
+
+/* ------------ crazy nav menu underline ---------------- */
+
+/* -------------------------------------------- navbar pabaiga ------------------------------------------- */
+
+/* -------------------------------------------- retro main ----------------------------------------------- */
+
+.retro-container {
+	box-shadow: 1px 1px 5px grey;
+	background: #7ababa;
+	height: auto;
+	background-image: url("../images/foggy-birds.png");
+}
+
+.old-style-logo {
+	margin-top: 20px;
+}
+
+/* --------------------------------------------- slider ------------------------------------------------ */
+
+.start-slide {
+	display:flex;
+    justify-content: center;
+}
+
+.slide-container {
+	width: 750px;
+	height: auto;
+	position: relative;
+    display:flex;
+    justify-content: center;
+    border-radius: 7px;
+    align-items: center;
+    background: #fbfaf6;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.retro-slide {
+    height: auto;
+    width: 700px;
+    margin: 15px 0;
+}
+
+.slide-text-container {
+	/* display: flex;
+    justify-content: center; */
+    height: auto;
+    background: none;
+    margin-top: 15px;
+    font-size: 23px;
+}
+
+@media screen and (max-width:991px) {
+	.retro-slide {
+		display: none;
+	}
+}
+
+/* ---------------------------------------------- slider pabaiga --------------------------------- */
+
+.artist-name {
+	margin-top: 50px;
+	color: #f9ebd9;
+}
+
+.artist-name h3 {
+	font-size: 30px;
+}
+
+.artist-name h4 {
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+/* ---------------------------------------------------- about me ----------------------------------- */
+
+.about-me-container {
+	box-shadow: 1px 1px 5px grey;
+	background: #e3dece;
+	height: auto;
+	background-image: url("../images/foggy-birds.png");
+}
+
+.about-me-text-below {
+	font-size: 20px;
+}
+
+.about-me-section h3 {
+	margin-top: 15px;
+	font-size: 25px;
+}
+
+.about-me-section .accordion {
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+/* cia pradzia grazinimo */
+.about-me-section {
+	margin: 10px;
+}
+
+.hobbies li {
+	padding: 30px 35px 0 35px;
+	position: relative;
+
+}
+
+/* ------------------------------------------- akordioanas ------------------------------ */
+
+div.panel {
+    padding: 0 1px;
+    background-color: #e3dece;
+    display: none;
+    background-image: url("../images/foggy-birds.png");
+}
+
+button.accordion {
+    color: #393a3a;
+    cursor: pointer;
+    padding: 0px;
+    margin-top: 0px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.hobbies ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.hobbies a, .carousel-item a {
+	text-decoration: none;
+	color: #393a3a;
+	font-family: Bazar;
+}
+
+.panel {
+	text-align: center;
+}
+
+.panel p {
+	font-family: RobotoSlab-Regular, Bazar;
+	background: none;
+	font-size: 19px;
+	margin-top: 10px;
+	width: 200px;
+	padding: 0 5px;
+}
+
+.accordion {
+	background-color: #e3dece; /* #e3dece */
+    background-image: url("../images/foggy-birds.png");
+}
+ 
+button.accordion.active, button.accordion:hover {
+    background-color: #e3dece; /* arba none */
+}
+
+/* ---------------------------------------------- portfolio -------------------------------------- */
+
+.portfolio-container {
+	box-shadow: 1px 1px 5px grey;
+	background: #df8665;
+	height: auto;
+	background-image: url("../images/foggy-birds.png");
+	/* opacity: 0.9;
+    filter: alpha(opacity=90);  RYSKUMAS */
+}
+
+.portfolio-info {
+	padding: 0 40px;
+}
+
+.tags {
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	margin: 50px 5px 0px 5px;
+}
+
+.tags li {
+    list-style: none;
+    position: relative;
+}
+
+.tags li a {
+	color: #393a3a;
+	position: relative;
+}
+
+.filter-a {
+	padding: 4px 15px 0px 20px;
+	margin-bottom: 2px;
+}
+
+.filter {
+	padding: 4px 0px 0px 10px;
+	margin-bottom: 2px;
+}
+
+.tags a {
+	display: block;
+	height: 29px;
+	background: #fbfaf6;
+	text-align: right;
+	position: relative;
+	margin: 0 10px 0 0; 
+	font-size: 15px;
+	text-decoration: none;
+	width: auto;
+	padding: 6px 9px 6px 9px;
+	border-radius: 0px 3px 3px 0px;
+	box-shadow: 0px 0px 5px grey;
+	font-family: RobotoSlab-Bold, Bazar;
+}
+
+.tags a:after {
+	content: "";  
+	position: absolute; 
+	left: -14px; 
+	top: 0;
+	border-top: 15px solid transparent;
+	border-right: 14px solid #fbfaf6;
+	border-bottom: 14px solid transparent;
+}
+
+.tags p {
+	display: block;
+	height: 29px;
+	background: #393a3a;
+	text-align: left;
+	position: relative;
+	margin: 0 10px 0 0; 
+	text-decoration: none;
+	color: #fbfaf6;
+	font-size: 15px;
+	list-style: none;
+	width: auto;
+	padding: 6px 9px 6px 9px;
+	border-radius: 3px 0 0 3px;
+	box-shadow: 0px 0px 5px grey;
+	font-family: RobotoSlab-Bold;
+}
+
+.tags p:after {
+	content: "";  
+	position: absolute; 
+	right: -14px; 
+	top: 0;
+	border-top: 15px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-left: 14px solid #393a3a;
+}
+
+.tags a {
+    text-decoration: none;
+    color: #393a3a;
+}
+
+/* --------------------------------------- portfolio post ------------------------------------- */
+
+/* ----------------- logo ------------- */
+
+.start-fa {
+	justify-content: center;
+	display: flex;
+}
+
+.fa-background {
+	position: relative;
+	background: #fbfaf6;
+	width: 40px;
+	height: 35px;
+	top: -20px;
+	border-radius: 100%;
+}
+
+.fa {
+	position: relative;
+	top: 6px;
+	font-size: 22px;
+}
+
+/* ---------------- logo ------------- */
+
+.portfolio-post {
+	display: inline-flex;
+	margin: 5px 2px;
+    -webkit-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+}
+
+.portfolio-post:hover {
+    -webkit-transform: scale3d(0.5, 0.5, 0.5);
+    transform: scale3d(1.2, 1.2, 1.2);
+    box-shadow: 1px 1px 5px grey;
+}
+
+.portfolio-image {
+	background: #fbfaf6;
+	height: auto 260px;
+	width: 200px;
+	border-radius: 5px;
+	justify-content: center;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.portfolio-post-text a {
+	text-decoration: none;
+	color: #393a3a;
+}
+
+.portfolio-post-text h3 {
+	font-size: 16px;
+	margin: 0px 10px;
+	position: relative;
+	top: -15px;
+	text-align: center;
+}
+
+.portfolio-thumbnail {
+    margin: 5px 5px;
+}
+
+.portfolio-post-text h3 {
+	font-family: Bazar;
+}
+
+/* ------------------------------------------ my blog ------------------------------------------- */
+
+.my-blog-container {
+	box-shadow: 1px 1px 5px grey;
+	background-image: url("../images/foggy-birds.png");
+	background: #dfdcd9;
+	height: auto;
+}
+
+/* --------- post ------------- */
+
+.post {
+	display: inline-flex;
+	width: auto;
+	padding: 0 50px;
+	height: auto;
+}
+
+.blog-thumbnail {
+	display: flex;
+	background: #fbfaf6;
+	margin-bottom: 25px;
+	height: auto;
+	width: auto;
+	border-radius: 4px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.thumbnail {
+   margin: 4px; 
+}
+
+.text-width p {
+	width: 500px;
+	height: auto;
+	text-align: left;
+}
+
+.post-text h3, .post-text p, small {
+	margin-left: 20px;
+	text-align: left;
+}
+
+small {
+	font-family: RobotoSlab-bold;
+	}
+
+.post-text a, .blog-thumbnail a {
+	text-decoration: none;
+	color: #393a3a;
+	font-family: RobotoSlab-Bold;
+}
+
+.post-text a {
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+.post-text h3 {
+	margin-bottom: 10px;
+}
+
+.post-text p {
+	font-family: RobotoSlab-Regular;
+	font-size: 20px;
+}
+
+.show-more-posts, .show-more-portfolio-posts {
+	background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline-style: none;
+}
+
+.show-more-posts:focus, .show-more-portfolio-posts:focus {
+	outline: 0;
+}
+
+.show-more-posts:active, .show-more-portfolio-posts:active {
+	color: #fbfaf6;
+}
+
+/* single post */
+
+/* --------- post end ------------- */
+
+.border-bottom-line-father {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.my-blog-info a, .portfolio-info a {
+	color: #393a3a;
+	text-decoration: none;
+}
+
+.border-line {
+	border-bottom: solid 2px #393a3a;
+	width: 50px;
+	margin-top: 30px;
+}
+
+/* ---------------------------------------------- contact ----------------------------------------- */
+
+.footer-one {
+	background: #4d5158;
+	background-image: url("../images/foggy-birds.png");
+	height: auto;
+	color: #f6edd8;
+}
+
+.footer-two {
+	background: #4d5158;
+	background-image: url("../images/foggy-birds.png");
+	color: #f6edd8;
+	justify-content: center;
+	display: flex;
+}
+
+
+/* ----------------- forma ------------------- */
+
+textarea {
+	padding-top: 7px;
+	max-height: 220px;
+	min-height: 220px;
+	resize: none;
+}
+
+input, textarea {
+	display: flex;
+	margin: 10px 0;
+	padding-left: 10px;
+	font-family: RobotoSlab-Regular;
+	color: #393a3a;
+}
+
+/* input */
+input[class="send-form"] {
+   background: #f6edd8;
+   border: none;
+   outline-color: #393a3a;
+}
+
+textarea[class="send-message"] {
+   background: #f6edd8;
+   border: none;
+   outline-color: #393a3a;
+}
+
+input[class="send-submit"] {
+   background: #f6edd8;
+   border: none;
+   outline: none;
+}
+/* input end */
+
+.send-message {
+	height: 200px;
+	width: 550px;
+	border-radius: 5px;
+}
+
+.send-form {
+	height: 35px;
+	width: 550px;
+	border-radius: 5px;
+}
+
+.send-submit {
+	height: 35px;
+	border-radius: 5px;
+	text-align: center;
+	width: 150px;
+	color: #393a3a;
+}
+
+.retro-form {
+	display: inline-flex;
+	color: #393a3a;
+}
+/* --------------- forma ---------------- */
+
+.social {
+	margin-top: 50px;
+	padding-bottom: 10px;
+	font-size: 25px;
+}
+
+.social-icons li {
+	display: inline-block;
+	padding: auto;
+	margin: auto;
+}
+
+.social-icons li a {
+	margin: 0 2px;
+}
+
+.social-icons {
+	text-align: center;
+    margin: auto;
+}
+
+.border-line-father {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.border-top-line {
+	border-top: solid 2px #f6edd8;
+	width: 50px;
+	padding-bottom: 5px;
+}
+
+/* dashed border */
+
+.padding-bottom-border {
+	border-top: 0.9px dashed #393a3a;
+    padding-top: 10px;
+}
+
+.dashed-border-container {
+    padding-top: 45px;
+}
+
+.padding-top-border {
+	border-top: 0.9px dashed #393a3a;
+    padding-bottom: 50px;
+}
+
+.dashed-top-border-container {
+	padding-top: 10px;
+}
+/* dashed border PABAIGA */
+
+/*  RESPONSIVE */
+/* nav */
+
+@media screen and (min-width: 991px) {
+	.navbar-collapse, .collapse, .nav-retro {
+		justify-content: center;
+	    display: flex;
+    }
+    .nav-right li, .nav-left li {
+		display: inline-block;
+		padding-bottom: 45px;
+    }
+    .logo-at-the-top {
+    	margin: 0 80px;
+    }
+    .jd-padding {
+	    padding-top: 20px;
+    }
+    .navbar {
+		height: 100px;
+    }
+    .retro-logo {
+	    margin-top: 100px;
+    }
+    .slide-container {
+	    margin-top: 50px;
+    }
+}
+
+/* nav end */
+
+@media screen and (min-width: 991px) {
+	.phone-tablet-show-logo {
+		display: none;
+    }
+    .tags {
+    	padding: 0px 80px 5px 80px;
+    }
+    .hobbies-logo {
+    	width: 120px;
+    	height: 120px;
+    }
+	small {
+		display: flex;
+		margin-bottom: 10px;
+	}
+	a .phone-tablet-icon-size {
+		width: 75px;
+		height: 75px;
+	}
+	.text-width p {
+		margin-bottom: 20px;
+	}
+	.border-after-date {
+		border-top: solid 2px #393a3a;
+		width: 50px;
+		padding-bottom: 5px;
+		margin-left: 20px;
+	}
+	.next-prev-page {
+		display: flex;
+		justify-content: space-between;
+	}
+	.text-right {
+		margin-right: 160px;
+	}
+	.text-left {
+		margin-left: 160px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.retro-logo, .about-me-logo, .portfolio-logo, .my-blog-logo, .footer-logo {
+		height: 70px;
+		width: 400px;
+	}
+	.single-post-thumbnail {
+		width: 140px;
+		height: 350px;
+	}
+	.single-post-padding {
+		padding: 0 160px;
+		justify-content: center;
+}
+	.large-show-logo {
+		display: none;
+    }
+	.text-below {
+		margin-bottom: 30px;
+		font-size: 15px;
+    }
+	.retro-logo {
+	    margin-top: 50px;
+    }
+    .old-style-logo {
+        height: 70px;
+        width: 400px;
+    }
+    .artist-name h3 {
+        font-size: 20px;
+    }
+    .artist-name h4 {
+		margin-top: 4px;
+		font-size: 15px;
+	}
+	.artist-name {
+	    margin-top: 20px;
+    }
+    .navbar {
+    	font-size: 20px;
+    }
+    /* about me */
+    .hobbies-logo {
+    	width: 100px;
+    	height: 100px;
+    }
+	.hobbies h3 {
+		font-size: 20px;
+	}
+	.hobbies h5 {
+		font-size: 12px;
+	}
+	/* portfolio */
+
+	.portfolio-post {
+		font-size: 10px;
+	}
+
+	/* my blog */
+	/* .text-width {
+		padding-bottom: 50px;
+		width: 300px;
+	}
+	.post-text h3 {
+
+	}
+	.post, .blog-posts, .post h3 {
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+	}
+	.blog-posts {
+		margin-top: 50px;
+	} */
+	.post {
+		display: inline-flex;
+		width: auto;
+		justify-content: center;
+		padding: 0 50px;
+		flex-wrap: wrap;
+		text-align: center;
+		height: auto;
+	}
+	.text-width p {
+		margin: 0 30px;
+		width: auto;
+		text-align: center;
+		padding-bottom: 30px;
+	}
+	.post-text a {
+		text-align: center;
+		margin-bottom: 10px;
+		font-size: 27px;
+	}
+
+	.post-text h3 {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	small {
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 6px;
+	}
+	.border-after-date-cont {
+		margin-top: 5px;
+		display: flex;
+		justify-content: center;
+	}
+	.border-after-date {
+		border-top: solid 2px #393a3a;
+		width: 50px;
+		padding-bottom: 5px;
+	}
+
+	/* footer */
+	.phone-tablet-icon-size {
+		height: 55px;
+		width: 55px;
+	}
+	.social {
+		margin-top: 40px;
+		padding-bottom: 10px;
+		font-size: 18px;
+	}
+	.send-form {
+		height: 35px;
+		width: 380px;
+		border-radius: 5px;
+	}
+	.send-message {
+		width: 380px;
+		height: 170px;
+	}
+	.send-submit {
+		width: 130px;
+	}
+	/* footer pabaiga */
+}
+
+@media screen and (max-width: 768px) {
+	.retro-logo, .about-me-logo, .portfolio-logo, .my-blog-logo, .footer-logo {
+		height: 75px;
+		width: 400px;
+	}
+	.text-below {
+		margin-bottom: 30px;
+		font-size: 18px;
+    }
+	.retro-logo {
+	    margin-top: 80px;
+    }
+    .old-style-logo {
+        height: 75px;
+        width: 450px;
+        margin-top: 30px;
+    }
+    .artist-name h3 {
+        font-size: 24px;
+    }
+    .artist-name h4 {
+		margin-top: 5px;
+		font-size: 19px;
+	}
+	.artist-name {
+	    margin-top: 30px;
+    }
+    .navbar {
+    	font-size: 20px;
+    }
+    /* about me */
+
+	}
+	.hobbies h3 {
+		font-size: 21px;
+	}
+	.hobbies h5 {
+		font-size: 14px;
+	}
+    /* .tags {
+    	padding: 0px 50px 20px 50px;
+    }  NEBEZINAU GAL DAR REIKES */
+
+	/* portfolio */
+
+	.portfolio-post {
+		font-size: 10px;
+	}
+
+	/* my blog */
+	/*.text-width {
+		padding-bottom: 50px;
+		width: 300px;
+	}
+	.post, .blog-posts, .post h3 {
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+	}
+	.blog-posts {
+		margin-top: 50px;
+	} */
+	.post h3 {
+		font-size: 22px;
+	}
+	/* footer */
+	.phone-tablet-icon-size {
+		height: 60px;
+		width: 60px;
+	}
+	.social {
+		margin-top: 40px;
+		padding-bottom: 10px;
+		font-size: 18px;
+	}
+	.send-form {
+		height: 35px;
+		width: 400px;
+		border-radius: 5px;
+	}
+	.send-message {
+		width: 400px;
+		height: 170px;
+	}
+	.send-submit {
+		width: 130px;
+	}
+
+	/* footer pabaiga */
+}
+
+@media screen and (max-width: 550px) {
+	.retro-logo, .about-me-logo, .portfolio-logo, .my-blog-logo, .footer-logo {
+		height: 60px;
+		width: 300px;
+	}
+	.text-below {
+		margin-bottom: 30px;
+		font-size: 15px;
+    }
+	.retro-logo {
+	    margin-top: 50px;
+    }
+    .old-style-logo {
+        height: 60px;
+        width: 350px;
+    }
+    .artist-name h3 {
+        font-size: 20px;
+    }
+    .artist-name h4 {
+		margin-top: 4px;
+		font-size: 15px;
+	}
+	.artist-name {
+	    margin-top: 20px;
+    }
+    .navbar {
+    	font-size: 20px;
+    }
+    /* about me */
+	.hobbies h3 {
+		font-size: 20px;
+	}
+	.hobbies h5 {
+		font-size: 12px;
+	}
+	/* portfolio */
+
+	.portfolio-post {
+		font-size: 10px;
+	}
+
+	/* my blog */
+	/* .text-width {
+		padding-bottom: 50px;
+		width: 300px;
+	}
+	.post-text h3 {
+
+	}
+	.post, .blog-posts, .post h3 {
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+	}
+	.blog-posts {
+		margin-top: 50px;
+	} */
+	.post h3 {
+		font-size: 22px;
+	}
+	/* footer */
+	.phone-tablet-icon-size {
+		height: 50px;
+		width: 50px;
+	}
+	.social {
+		margin-top: 40px;
+		padding-bottom: 10px;
+		font-size: 18px;
+	}
+	.send-form {
+		height: 35px;
+		width: 330px;
+		border-radius: 5px;
+	}
+	.send-message {
+		width: 330px;
+		height: 170px;
+	}
+	.send-submit {
+		width: 130px;
+	}
+	/* footer pabaiga */
+}
+
+@media screen and (max-width: 375px) {
+	.retro-logo, .about-me-logo, .portfolio-logo, .my-blog-logo, .footer-logo {
+		height: 45px;
+		width: 200px;
+	}
+	.navbar-brand {
+		height: 65px;
+		width: 65px;
+	}
+	.text-below {
+		margin-bottom: 30px;
+		font-size: 13px;
+    }
+    .nav-retro li {
+    	font-size: 18px;
+    }
+	.retro-logo {
+	    margin-top: 50px;
+    }
+    .old-style-logo {
+        height: 45px;
+        width: 240px;
+    }
+    .artist-name h3 {
+        font-size: 16px;
+    }
+    .artist-name h4 {
+		margin-top: 4px;
+		font-size: 13px;
+	}
+	.artist-name {
+	    margin-top: 20px;
+    }
+    .navbar {
+    	font-size: 20px;
+    }
+    /* about me */
+
+	.hobbies h3 {
+		font-size: 20px;
+	}
+	.hobbies h5 {
+		font-size: 12px;
+	}
+	/* portfolio */
+
+	.portfolio-post {
+		font-size: 10px;
+	}
+
+	/* my blog */
+	/* .text-width {
+		padding-bottom: 50px;
+		width: 230px;
+	}
+	.about-me-info {
+		flex-wrap: wrap;
+	}
+	.post-text h3 {
+
+	}
+	.post, .blog-posts, .post h3 {
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+	}
+	.blog-posts {
+		margin-top: 50px;
+	} */
+	.post h3 {
+		font-size: 22px;
+	}
+	/* footer */
+	.phone-tablet-icon-size {
+		height: 40px;
+		width: 40px;
+	}
+	.social {
+		margin-top: 40px;
+		padding-bottom: 10px;
+		font-size: 18px;
+	}
+	.send-form {
+		height: 35px;
+		width: 240px;
+		border-radius: 5px;
+	}
+	.send-message {
+		width: 240px;
+		height: 170px;
+	}
+	.send-submit {
+		width: 130px;
+	}
+
+	/* footer pabaiga */
+}
+
+@media screen and (max-width: 320px) {
+	.retro-logo, .about-me-logo, .portfolio-logo, .my-blog-logo, .footer-logo {
+		height: 40px;
+		width: 200px;
+	}
+	.navbar-brand {
+		height: 65px;
+		width: 65px;
+	}
+	.text-below {
+		margin-bottom: 30px;
+		font-size: 13px;
+    }
+    .nav-retro li {
+    	font-size: 18px;
+    }
+	.retro-logo {
+	    margin-top: 50px;
+    }
+    .old-style-logo {
+        height: 40px;
+        width: 250px;
+    }
+    .artist-name h3 {
+        font-size: 16px;
+    }
+    .artist-name h4 {
+		margin-top: 4px;
+		font-size: 13px;
+	}
+	.artist-name {
+	    margin-top: 20px;
+    }
+    .navbar {
+    	font-size: 20px;
+    }
+    /* about me */
+	.hobbies h3 {
+		font-size: 20px;
+	}
+	.hobbies h5 {
+		font-size: 12px;
+	}
+	/* portfolio */
+
+	.portfolio-post {
+		font-size: 10px;
+	}
+
+	/* my blog */
+	/*.text-width {
+		padding-bottom: 50px;
+		width: 230px;
+	}
+	.about-me-info {
+		flex-wrap: wrap;
+	}
+	.post-text h3 {
+
+	}
+	.post, .blog-posts, .post h3 {
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+	}
+	.blog-posts {
+		margin-top: 50px;
+	} */
+	.post h3 {
+		font-size: 22px;
+	}
+	/* footer */
+	.phone-tablet-icon-size {
+		height: 40px;
+		width: 40px;
+	}
+	.social {
+		margin-top: 40px;
+		padding-bottom: 10px;
+		font-size: 18px;
+	}
+	.send-form {
+		height: 35px;
+		width: 250px;
+		border-radius: 5px;
+	}
+	.send-message {
+		width: 250px;
+		height: 170px;
+	}
+	.send-submit {
+		width: 130px;
+	}
+	/* footer pabaiga */
+}
+
+@media screen and (min-width:320px) {
+	.tags {
+		flex-wrap: wrap;
+	}
+}
+/*  RESPONSIVE PABAIGA */
+
+/* WORDPRESS EDITS */
+
+.no-more-posts {
+	position: relative;
+	top: 18px;
+}
+
+.test-test {
+	position: absolute;
+	top: 300px;
+	background: #fbfaf6;
+	width: 700px;
+	height: 50px;
+	text-align: left;
+	opacity: 0.5;
+}
+
+.top-news {
+	position: absolute;
+	top: 300px;
+	font-size: 30px;
+	color: #393a3a;
+	padding: 10px 0px 5px 10px;
+}
+
+
+.single-post-padding {
+		padding: 0 160px;
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+	}
+.single-post-thumbnail {
+		width: 740px;
+		height: 340px;
+	}
+.single-text-width p {
+		width: auto;
+	}
+
+	@media screen and (max-width: 1280px) {
+		.single-post-padding {
+		padding: 0 50px;
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+	}
+.single-post-thumbnail {
+		width: 640px;
+		height: 340px;
+	}
+.single-text-width p {
+		width: 640px;
+	}
+	}
+
+	@media screen and (max-width: 991px) {
+		.single-post-padding {
+		padding: 0 50px;
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+	}
+.single-post-thumbnail {
+		width: 540px;
+		height: 340px;
+	}
+.single-text-width p {
+		width: 540px;
+	}
+	}
+
+	@media screen and (max-width: 768px) {
+		.single-post-padding {
+		padding: 0 40px;
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+	}
+.single-post-thumbnail {
+		width: 440px;
+		height: 340px;
+	}
+.single-text-width p {
+		width: 440px;
+	}
+	}
+
+@media screen and (max-width: 550px) {
+		.single-post-padding {
+		padding: 0 20px;
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+	}
+.single-post-thumbnail {
+		width: 340px;
+		height: 300px;
+	}
+.single-text-width p {
+		width: 340px;
+	}
+	}
+	@media screen and (max-width: 320px) {
+		.single-post-padding {
+		padding: 0 10px;
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+	}
+.single-post-thumbnail {
+		width: 280px;
+		height: 300px;
+	}
+.single-text-width p {
+		width: 280px;
+	}
+	}
+	.xxx-padding {
+		padding-bottom: 40px;
+}
