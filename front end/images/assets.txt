@@ -1,0 +1,11 @@
+headerio spalva: 7bbebe tamsesne zydra
+retro backgroundo spalva: 7ababa siektiek dar tamsesne zydra
+about me backgroundo spalva: e3dece rusvai pilka
+portfolio backgroundo spalva: df8665 nublukusi orandzine
+my blog backgroundo spalva: dfdcd9 pilka 
+contanct me backgroundo spalva: 4d5158 tamsiai melyna
+
+
+<i class="fa fa-file-image-o" aria-hidden="true"></i> image icon
+<i class="fa fa-television" aria-hidden="true"></i> tv icon
+<i class="fa fa-file-text-o" aria-hidden="true"></i> document icon
